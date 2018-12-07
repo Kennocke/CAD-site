@@ -16,7 +16,6 @@
 	margin-bottom: 0px;
 	margin-top: 75px;
 	position: relative;
-	border: 1px double green;
 	-webkit-user-select: none;
 }
 .body-wrapper {
@@ -28,7 +27,6 @@
     overflow: auto;
 }
 header {
-    border: 1px double black;
     top: 0;
     right: 0;
     bottom: 0;
@@ -41,14 +39,14 @@ header {
 	font-size: 16px;
 	font-family: "ProximaNova-Bold";
 }
-aside {
+article {
 	top: 780px;
     right: 0;
     bottom: 0;
     left: 0;
     margin: 0 auto;
 	width: 1280px;
-	height: 1500px;
+	height: 3000px;
 	border: 1px double black;
 	position: absolute;
 	overflow-x: hidden;
@@ -134,23 +132,21 @@ body {
 .content {
 	width: 100%;	
 	float: left;
-	border: 1px double black;
 }
 .bitmap {
-	border: 1px double black;
-	width: 100px;
+
+	width: 650px;
+	height: 513px;
 }
 .logo-content {
-	border: 1px double black;
-	width: 400px;
-	height: 537px;
+	width: 650px;
+	height: 513px;
 	float: right;
 	padding: 0;
 	margin-top: 70px;
-	margin-right: 10px;
+	margin-right: 26px;
 }
 .content-text-wrapper {
-	border: 1px double black;
 	float: left;
 	margin-top: 213px;
 	margin-left: 95px;
@@ -434,6 +430,42 @@ body {
 .slide-2 {
 	transition: transform .3s;
     transform: translateX(-852px);	
+}
+.title-partners {
+	font-family: "ProximaNova-Bold";
+	font-size: 40px;
+	margin: 150px 0 95px 40px;
+}
+.partners-img1 {
+	width: 103px;
+	height: 100px;
+	margin-left: 28px;
+}
+.partners-img2 {
+	width: 161px;
+	height: 110px;
+	margin-left: 258px;	
+}
+.partners-img3 {
+	width: 82px;
+	height: 100px;
+	margin-left: 246px;
+}
+.partners-img4 {
+	width: 100px;
+	height: 100px;
+	margin-left: 247px;
+}
+.partners-wrapper {
+	border: 1px double black;
+	margin: 0;
+	padding: 0;
+}
+.title-manufacturing {
+	font-family: "ProximaNova-Bold";
+	font-size: 40px;
+	margin: 150px 0 90px 40px;
+}	
 }
 /*.img-diving {
 	width: 71px;
