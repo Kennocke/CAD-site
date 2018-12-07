@@ -5,13 +5,40 @@ window.addEventListener("load", function() {
   btn2 = document.querySelectorAll('.button-prev, .button-next'),
   slider2 = document.querySelectorAll('.slider-window')[0];
 
-  var count = 0;
   var count1 = 0;
-  var count2 = 0, count3 = 0;
+  var count2 = 0;
 
  // var runSlide = startSlide(2500);
 
 
+ //  function slide() {
+ //    count2 = count2 + 1;
+ //    slider2.className = 'slider-window'; 
+ //    slider2.classList.add('slide-' + count2);
+    
+ //    if (count2 < 2) {
+ //      count2 = count2 - 1; 
+ //      slider2.className = 'slider-window';
+ //      slider2.classList.add('slide-' + count2);
+ //    }
+    
+ // }
+
+
+  btn2[1].addEventListener('click', function() {
+    if (count2 < 2) {
+      count2 = count2 + 1;
+      slider2.className = 'slider-window';
+      slider2.classList.add('slide-' + count2);
+    }
+  })
+  btn2[0].addEventListener('click', function() {
+    if (count2 > 0) {
+      count2 = count2 - 1;
+      slider2.className = 'slider-window';
+      slider2.classList.add('slide-' + count2);
+    } 
+  })
   for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('mouseover', function() {
       btn[i].classList.add('but-1');
@@ -21,7 +48,6 @@ window.addEventListener("load", function() {
       //clearInterval(runSlide);
       three.className = 'three';
       three.classList.add('three-' + i);
-      count = i;
       count1 = i;
       /*
       setTimeout(function() {
@@ -44,7 +70,7 @@ window.addEventListener("load", function() {
   */
 //Сделать отдельные события для каждой кнопки и счётчик учитывающий колличество блоков
 //Потом изменять его при нажатии. Условиями проверять начало и конец.
-  for (let i = 0; i < btn2.length; i++) {
+ /* for (let i = 0; i < btn2.length; i++) {
     btn2[i].addEventListener('click', function() {
       slider2.className = 'slider-window';
       slider2.classList.add('slide-' + i);
@@ -52,4 +78,5 @@ window.addEventListener("load", function() {
       count3 = i;  
     })
   }
+  */
 });

@@ -17,6 +17,7 @@
 	margin-top: 75px;
 	position: relative;
 	border: 1px double green;
+	-webkit-user-select: none;
 }
 .body-wrapper {
 	width: 100%;
@@ -47,7 +48,7 @@ aside {
     left: 0;
     margin: 0 auto;
 	width: 1280px;
-	height: 1300px;
+	height: 1500px;
 	border: 1px double black;
 	position: absolute;
 	overflow-x: hidden;
@@ -131,14 +132,17 @@ body {
 }*/
 
 .content {
-	width: 100%;
+	width: 100%;	
 	float: left;
+	border: 1px double black;
 }
 .bitmap {
-	max-width: 300px;
+	border: 1px double black;
+	width: 100px;
 }
 .logo-content {
-	width: 500px;
+	border: 1px double black;
+	width: 400px;
 	height: 537px;
 	float: right;
 	padding: 0;
@@ -146,11 +150,12 @@ body {
 	margin-right: 10px;
 }
 .content-text-wrapper {
+	border: 1px double black;
 	float: left;
 	margin-top: 213px;
 	margin-left: 95px;
 	padding: 0;
-	width: 421px;
+	width: 501px;
 }
 .main-text {
 	font-family: "ProximaNova-Bold";
@@ -184,6 +189,7 @@ body {
 	font-size: 16px;
 	margin-left: 42px;
 	margin-top: 15px;
+	-webkit-user-select: none;
 }
 .clear {
 	clear: both;
@@ -209,19 +215,22 @@ body {
 	color: #ffa900;
 	font-size: 45px;	
 }
-.but:hover {
-	color: #ffa900;
-}
 .button-wrapper {
 	height: 49px;
+	margin-top: 0px;
 	/*border: 1px double black;*/
 }
 .button-wrapper div:last-child {
 	margin-left: 100px;
 }
 .slider-wrapper {
-	border: 1px double black;
-	height: 541px;
+	/*border: 1px double black;*/
+	height: 700px;
+}
+.slider-wrapper p:first-child {
+	font-family: "ProximaNova-Bold";
+	font-size: 40px;
+	margin: 0 0 99px 39px;
 }
 .three {
     display: flex;
@@ -229,6 +238,7 @@ body {
     flex-direction: row;
     width: 1440px;
     height: 480px;
+    margin-bottom: 0px;
     transition: transform .3s;
     transform: translateX(0);
 }
@@ -263,6 +273,7 @@ body {
 }
 .four-text {
 	margin-top: 99px;
+	-webkit-user-select: none;
 }
 .four-text p:first-child {
 	font-family: "ProximaNova-Bold";
@@ -310,7 +321,8 @@ body {
 .four-ico-wrapper p {
 	font-family: "ProximaNova-Bold";
 	font-size: 16px;
-	margin-top: 64px; 
+	margin-top: 64px;
+	-webkit-user-select: none; 
 }
 .four-ico-wrapper img {
 	width: 71px;
@@ -322,12 +334,16 @@ body {
 	height: 70px;
 	margin-left: 72px;	
 }
+.title-slider2 {
+	font-family: "ProximaNova-Bold";
+	font-size: 40px;
+	margin: 140px 0 90px 40px;
+	padding: 0;
+}
 .slider-wrapper-second {
 	margin-left: 40px;
-	margin-top: 206px;
 	border-radius: 15px;
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
-	border: 1px double green;
 	width: 1180px;
 	height: 500px;
 }
@@ -341,7 +357,7 @@ body {
 	float: left;
 	width: 660px;
 	height: 100%;
-	border: 1px double purple;
+	/*border: 1px double purple;*/
 }
 .slider-part-right {
 	float: right;
@@ -349,38 +365,40 @@ body {
 	border: 1px double brown;
 }
 .slider-window-wrapper {
-	margin-top: 115px;
+	margin-top: 95px;
 	margin-left: 52px;
 	width: 426px;
 	height: 266px;
-	border: 1px double brown;
+	overflow: hidden;
 }
 .button-panel {
 	display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    border: 1px double brown;
+    /*border: 1px double brown;*/
 }
 .button-next {
 	margin-left: 45px;
-	width: 15px;
-	height: 40px;
+	width: 20px;
+	height: 50px;
 }
 .button-prev {
 	margin-left: 51px;
-	width: 15px;
-	height: 40px;
+	width: 20px;
+	height: 50px;
 }
 .button-more {
 	margin-left: 53px;
-	width: 160px;
-	height: 40px;
+	width: 170px;
+	height: 50px;
 	border-radius: 10px;
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
 	background-color: #ffa900;
+	-webkit-user-select: none;
 }
-.button-more p{
-	margin: 10px 0 0 38px;
+.button-more p {
+	color: white;
+	margin: 15px 0 0 43px;
 	padding: 0px;
 }
 .slider-window {
@@ -389,13 +407,21 @@ body {
 	flex-direction: row;
 	height: 169px;
 	width: 426px;
-	border: 2px double green;
 }
 .news {
-	border: 1px double purple;
 	min-width: 426px;
 	transition: transform .3s;
     transform: translateX(0);
+}
+.news p:nth-child(2) {
+	margin: 20px 0 20px 0;
+	font-size: 40px;
+	font-family: "ProximaNova-Bold";
+}
+.news p:not(:nth-child(2)) {
+	font-family: "ProximaNova-Regular";
+	color: #9b9b9b;
+	margin: 0;
 }
 .slide-0 {
 	transition: transform .3s;
