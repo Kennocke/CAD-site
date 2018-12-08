@@ -8,26 +8,14 @@ window.addEventListener("load", function() {
   var count1 = 0;
   var count2 = 0;
 
- // var runSlide = startSlide(2500);
-
-
- //  function slide() {
- //    count2 = count2 + 1;
- //    slider2.className = 'slider-window'; 
- //    slider2.classList.add('slide-' + count2);
-    
- //    if (count2 < 2) {
- //      count2 = count2 - 1; 
- //      slider2.className = 'slider-window';
- //      slider2.classList.add('slide-' + count2);
- //    }
-    
- // }
-
-
   btn2[1].addEventListener('click', function() {
     if (count2 < 2) {
       count2 = count2 + 1;
+      if (count2 == 2) {
+        btn2[1].setAttribute('src', 'img/frontArrowEnd.svg');
+      } else {
+        btn2[0].setAttribute('src', 'img/backArrow.svg');
+      }
       slider2.className = 'slider-window';
       slider2.classList.add('slide-' + count2);
     }
@@ -35,6 +23,11 @@ window.addEventListener("load", function() {
   btn2[0].addEventListener('click', function() {
     if (count2 > 0) {
       count2 = count2 - 1;
+      if (count2 == 0) {
+        btn2[0].setAttribute('src', 'img/backArrowEnd.svg');
+      } else {
+        btn2[1].setAttribute('src', 'img/frontArrow.svg');
+      }
       slider2.className = 'slider-window';
       slider2.classList.add('slide-' + count2);
     } 
@@ -45,15 +38,9 @@ window.addEventListener("load", function() {
       if (i != count1) {
         btn[count1].classList.remove('but-1');  
       }
-      //clearInterval(runSlide);
       three.className = 'three';
       three.classList.add('three-' + i);
-      count1 = i;
-      /*
-      setTimeout(function() {
-        runSlide = startSlide(1000)
-      }, 1000)*/
-    
+      count1 = i;   
     });
  }
   /*
