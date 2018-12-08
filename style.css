@@ -118,25 +118,6 @@ footer {
 .list-number-vk li:last-child {
 	margin-left: 20px;
 }
-/*.log-reg-wrapper {
-	float: right;
-	margin-right: 130px;
-	margin-top: 25px;
-}
-.login {
-	float: left;
-	width: 71px;
-	height: 20px;
-	margin-top: 10px;
-}
-.reg {
-	float: left;
-	color: white;
-	padding: 10px 26px 10px 27px;
-	background: #ffa900;
-	border-radius: 10px;
-	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
-}*/
 
 .content {
 	width: 100%;	
@@ -194,13 +175,11 @@ footer {
 	font-size: 16px;
 	margin-left: 42px;
 	margin-top: 15px;
-	-webkit-user-select: none;
 }
 .clear {
 	clear: both;
 }
 .but {
-	/*border: 1px double black;*/
 	font-family: "ProximaNova-Bold";
 	font-size: 40px;
 	float: left;
@@ -223,13 +202,11 @@ footer {
 .button-wrapper {
 	height: 49px;
 	margin-top: 0px;
-	/*border: 1px double black;*/
 }
 .button-wrapper div:last-child {
 	margin-left: 100px;
 }
 .slider-wrapper {
-	/*border: 1px double black;*/
 	height: 700px;
 }
 .slider-wrapper p:first-child {
@@ -316,18 +293,15 @@ footer {
 	margin-left: 219px;	
 }
 .four-ico-wrapper div:not(last-child) {
-	/*width: 245px;*/
 	height: 158px;
 }
 .four-ico-wrapper div:last-child {
-	/*width: 280px;*/
 	height: 158px;
 }
 .four-ico-wrapper p {
 	font-family: "ProximaNova-Bold";
 	font-size: 16px;
 	margin-top: 64px;
-	-webkit-user-select: none; 
 }
 .four-ico-wrapper img {
 	width: 71px;
@@ -362,7 +336,6 @@ footer {
 	float: left;
 	width: 660px;
 	height: 100%;
-	/*border: 1px double purple;*/
 }
 .slider-part-right {
 	float: right;
@@ -380,7 +353,6 @@ footer {
 	display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    /*border: 1px double brown;*/
 }
 .button-next {
 	margin-left: 45px;
@@ -399,7 +371,6 @@ footer {
 	border-radius: 10px;
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
 	background-color: #ffa900;
-	-webkit-user-select: none;
 }
 .button-more p {
 	color: white;
@@ -466,7 +437,6 @@ footer {
 	margin-left: 247px;
 }
 .partners-wrapper {
-	/*border: 1px double black;*/
 	margin: 0;
 	padding: 0;
 }
@@ -476,7 +446,6 @@ footer {
 	margin: 150px 0 90px 40px;
 }	
 .wrapper-manufacturing {
-	/*border: 1px double black;*/
 	font-family: "ProximaNova-Regular";
 	font-size: 20px;
 	color: #9b9b9b;
@@ -496,7 +465,6 @@ footer {
 	background-color: #ffa900;
 	margin: 0 auto;
 	color: white;
-	-webkit-user-select: none;
 }
 .but-accept p {
 	margin: 15px 0 0 65px; 
@@ -548,8 +516,8 @@ footer {
 	padding: 0;
 	font-family: "ProximaNova-Regular";
 	font-size: 20px;
-	-webkit-user-select: none;
 }
+
 .footer-list li {
 	list-style-type: none;
 	margin-bottom: 28px;
@@ -584,14 +552,7 @@ footer {
 	width: 129px;
 	border-radius: 10px;
 	background-color: #ffa900;
-	-webkit-user-select: none;
 }
 .but-email p {
 	margin: 15px 0 0 24px;
 }
-/*.img-diving {
-	width: 71px;
-	height: 70px;
-	margin-left: 87px;
-}
-*/

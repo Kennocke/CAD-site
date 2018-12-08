@@ -43,27 +43,4 @@ window.addEventListener("load", function() {
       count1 = i;   
     });
  }
-  /*
-  function startSlide(time) {
-    return setInterval(function() {
-      if (count == btn.length) {
-        count = 0;
-      }
-      three.className = 'three';
-      three.classList.add('three-' + count);
-      count++;
-    }, time || 1000);
-  }
-  */
-//Сделать отдельные события для каждой кнопки и счётчик учитывающий колличество блоков
-//Потом изменять его при нажатии. Условиями проверять начало и конец.
- /* for (let i = 0; i < btn2.length; i++) {
-    btn2[i].addEventListener('click', function() {
-      slider2.className = 'slider-window';
-      slider2.classList.add('slide-' + i);
-      count2 = i;
-      count3 = i;  
-    })
-  }
-  */
 });
